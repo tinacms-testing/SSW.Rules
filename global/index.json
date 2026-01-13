@@ -1,0 +1,44 @@
+{
+  "header": {
+    "icon": {
+      "name": "FaHome",
+      "color": "primary"
+    },
+    "name": "SSW Rules",
+    "color": "primary",
+    "nav": [
+      {
+        "href": "/",
+        "label": "Home"
+      },
+      {
+        "href": "/rules",
+        "label": "Rules"
+      }
+    ]
+  },
+  "footer": {
+    "social": [
+      {
+        "icon": {
+          "name": "FaGithub",
+          "color": "primary"
+        },
+        "url": "https://github.com/SSWConsulting/SSW.Rules"
+      }
+    ]
+  },
+  "theme": {
+    "color": "#cc4141",
+    "font": "sans",
+    "darkMode": "system"
+  },
+  "quickLinks": {
+    "links": [
+      {
+        "linkText": "Do you follow our rules?",
+        "uri": "/rules"
+      }
+    ]
+  }
+}
