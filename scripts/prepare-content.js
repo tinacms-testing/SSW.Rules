@@ -31,9 +31,9 @@ const orphanedCheckScript = join(scriptsPath, "orphaned_rules_check.py");
 const buildRedirectMapScript = join(scriptsPath, "build-redirect-map.py");
 const rulesDirAbs = join(contentAbsPath, "public/uploads/rules");
 
-execSync(`python "${buildMapScript}"`, { stdio: "inherit", cwd: scriptsPath });
-execSync(`python "${orphanedCheckScript}"`, { stdio: "inherit", cwd: scriptsPath });
-execSync(`python "${buildRedirectMapScript}"`, { stdio: "inherit", cwd: scriptsPath });
+execSync(`python3 "${buildMapScript}"`, { stdio: "inherit", cwd: scriptsPath });
+execSync(`python3 "${orphanedCheckScript}"`, { stdio: "inherit", cwd: scriptsPath });
+execSync(`python3 "${buildRedirectMapScript}"`, { stdio: "inherit", cwd: scriptsPath });
 
 copyAndMoveJsonFile("category-uri-title-map.json", scriptsPath);
 copyAndMoveJsonFile("rule-to-categories.json", scriptsPath);
